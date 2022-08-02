@@ -13,6 +13,9 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 " --------------------
 Plug 'morhetz/gruvbox'
 " --------------------
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+" --------------------
 
 call plug#end()
 
