@@ -1,0 +1,50 @@
+""" Map leader to \ -----------------------
+let mapleader="\"
+""" Plugins-----------------------------------
+set easymotion
+set surround
+set multiple-cursors
+set NERDTree
+set commentary
+set vim-paragraph-motion
+set ideamarks
+
+let g:EasyMotion_override_acejump = 0
+set ignorecase
+set showcmd
+set showmode
+set smartcase
+set incsearch
+set hlsearch
+set scrollup=5
+set scrolloff=5
+set number
+set relativenumber
+set keep-english-in-normal
+
+""" idea set---------------------------------
+set ideajoin
+set ideaput
+Plug 'terryma/vim-multiple-cursors'
+
+""" KeyMap-----------------------------------
+map <leader>p <Action>(ParameterInfo)
+map <leader>n <Action>(Generate)
+map <leader>r <Action>(ReformatCode)
+map <leader>c <Action>(RenameElement)
+map <leader>e <Action>(ShowErrorDescription)
+map <leader><leader>e <Action>(GotoNextError)
+map <leader>g <Action>(QuickJavaDoc)
+map <leader>d <Action>(QuickImplementations)
+map <leader>b <Action>(Switcher)
+imap <A-j> <Down>
+imap <A-k> <Up>
+
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+nmap <C-x> <Plug>SkipOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+nmap <C-p> <Plug>RemoveOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
